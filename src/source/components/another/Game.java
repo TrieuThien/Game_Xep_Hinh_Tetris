@@ -12,13 +12,14 @@ public class Game implements Runnable {
 	
 	private int width = 450, height = 600;
 	private float scale = 1f;
-	private String title = "Game xep hinh Tetris";
+	private String title = "Game xếp hình Tetris";
 
 	public Game() {
 		
 	}
 	
 	public void start() {
+		BackgroundMusic.playMusic();
 		window = new Window(this);
 		input = new Input(this);
 		
